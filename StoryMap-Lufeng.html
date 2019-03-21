@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css" integrity="sha256-YR4HrDE479EpYZgeTkQfgVJq08+277UXxMLbi/YP69o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div id="intro">
+        <h2>Philadelphia TOD Analysis</h2>
+        <p class="main" id="welcomepage">Transit-oriented development, or TOD, is a type of
+          community development that integrates a plenty of facilities into
+          a walkable neighborhood and located within a certain buffer of
+          public transportations. Planners believe TOD improves
+          accessibility for people of all ages and incomes.<br>
+          <br>
+          The study first visualizes the social-demographic information
+          near Philadelphia SEPTA BSL and MFL stations,
+          then analyzes how the distance to transit might influence
+          people's willingess to pay in terms of the property price.</p>
+        <p class="slide">This application has five sections:</p>
+        <p class="slide">1. BSL and MFL at a Glance</p>
+        <p class="slide">2. Median Household Income around SEPTA BSL and MFL</p>
+        <p class="slide">3. Percentage of White around SEPTA BSL and MFL</p>
+        <p class="slide">4. Property price across the entire Philadelphia</p>
+        <P class="slide">5. Property price around SEPTA BSL and MFL</p>
+        <p class="main">To use the application, click the button below.</p>
+        <button id="previous"><</button>
+        <button id="next">></button>
+        <div style="clear:both"></div>
+      </div>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- Javascript Imports -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js" integrity="sha256-6BZRSENq3kxI4YYBDqJ23xg0r1GwTHEpvp3okdaIqBw=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js" integrity="sha256-O4179En8zabOlPYBNvGp8cF0uh0vnSZpW4Q6Ul1h+8c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/Preparation.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
