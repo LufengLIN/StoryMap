@@ -22,6 +22,7 @@ p.main {
 }
 
 .sidebar {
+    background-color: #EDEDED;
     position: absolute;
     left: 0px;
     width: 38.2%;
@@ -31,6 +32,7 @@ p.main {
     padding: 20px;
     font-size: 16px;
     text-align: justify;
+
 }
 
 .legend {
@@ -52,5 +54,14 @@ p.main {
     margin-right: 8px;
 }
 
+.button {
+  background-color: #CCCACA; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
 #next {float:right;}
 #previous {float:left;visibility:hidden;}
