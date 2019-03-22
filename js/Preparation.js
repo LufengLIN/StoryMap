@@ -16,8 +16,11 @@ var Stamen_TonerLite = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{
   ext: 'png'
 }).addTo(map);
 
-//SLIDE1: WHERE ARE THE STATIONS?
-//the city limit map
+/* =====================
+Set the Legend and the Style
+===================== */
+
+//The City Limit
 function style0(feature) {
     return {
         fillColor: "#EAEAE9",
@@ -83,8 +86,6 @@ $.ajax('https://raw.githubusercontent.com/LufengLIN/StoryMap/master/stations.geo
     ).addTo(map);
   });
 
-//SLIDE2: WHO LIVES NEAR THE SEPTA STATION
-//Set the color style
 //MdHHInc
 function getColor(a) {
     return a > 49430   ? '#FC4E2A' :

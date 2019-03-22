@@ -1,7 +1,6 @@
 /* =====================
-Leaflet Configuration
+Change the slides
 ===================== */
-//Set the base map
 
 var addTitle = (title) => {
   $('.sidebar').append(`<h3 id='title'>${title}</h3>`);
@@ -29,7 +28,7 @@ var cleanup = () => {
   map.removeControl(legend4);
 };
 
-//Built the slides
+//Build the slides
 slides = [{
   legend: legend0,
   id: 0,
@@ -107,7 +106,6 @@ var buildSlide = (slideObject) => {
   cleanup();
   addTitle(slideObject.title);
   addText(slideObject.text);
-
   addmap(slideObject);
   $('#previous').css('visibility','initial');
   $('#next').css('visibility','initial');
@@ -119,9 +117,7 @@ var buildSlide = (slideObject) => {
     $('#next').css('visibility','hidden');
   }
 };
-
-
-
+//The button
 $("#next,#previous").click((event) => {
   console.log(event);
   let id = event.target.id;
